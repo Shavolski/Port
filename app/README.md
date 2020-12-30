@@ -68,3 +68,33 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<div class="flex items-center justify-center h-screen static">
+
+   <div
+     className="bg-black p-8 grid grid-rows-2 grid-flow-col gap-2">
+     <motion.div
+       className="container"
+       animate={{
+         y:[ 0, -20, -30, -50, -30, -20, 0],
+         borderRadius: ["30%", "50%", "50%", "50%", "30%", "25%", "0%",],
+       }}
+       transition={{
+           times: [0, 0.2, 0.5, 0.8, 1],
+           duration: 1,
+           type: "spring",
+           ease: "easeInOut",
+           damping: 10,
+           mass: 0.75,
+           stiffness: 100,
+           loop: Infinity,
+           repeatDelay: 1
+       }}
+     />
+     <motion.div className="container"/>
+     <motion.div className="container"/>
+     <motion.div className="container"/>
+   </div>
+
+   <div className="container2 absolute"/>
+</div>
