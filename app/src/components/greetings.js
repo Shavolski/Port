@@ -26,7 +26,7 @@ function greetings() {
        <motion.div
          className="container2 absolute"
          animate={{
-           x:[0, 0,0, 0, -90],
+           x:[0, 0, 0, 0, -90],
            scale: [1, 2, 2, 1, 1],
            rotate: [0, 0, 270, 270, 0],
            borderRadius: ["20%", "50%", "50%", "50%", "20%"]
