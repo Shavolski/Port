@@ -1,8 +1,10 @@
 import React from 'react';
-
+import Navbar from './Navbar.js';
 function Home() {
   return (
-    <div>home</div>
+    <body class="bg-gray-800 h-screen">
+      <Navbar/>
+    </body>
   );
 };
 
